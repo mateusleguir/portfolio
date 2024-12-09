@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+/* Versão Mobile First */
+
+@font-face {
+  font-family: "Architects Daughter";
+  src: url("../fontes/architects_daughter/ArchitectsDaughter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("../fontes/outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fontes/inter/Inter-VariableFont_opsz\,wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+:root {
+  --cor1: #000000;
+  --cor2: #ECF1F8;
+  --cor3: #BDBDBD;
+  --cor4: #0066cc;
+  --cor5: #56AA79;
+  /* --cor5: #52A894; */
+
+
+
+  --fonte-padrao: "Inter", cursive;
+  --fonte-destaque: "Architects Daughter", cursive;
+  --fonte-especial: "Outfit", cursive;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: var(--cor1);
+}
+
+header {
+  background-color: var(--cor1);
+  min-height: 150px;
+  padding-top: 40px;
+}
+
+header > h1 {
+  color: var(--cor2);
+  font-family: var(--fonte-destaque);
+  font-size: 3em;
+  font-weight: normal;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.534);
+  text-align: center;
+}
+
+.decorative-line {
+  width: 70%;  /* Largura da linha decorativa */
+  height: 2px;  /* Altura da linha */
+  background-color: var(--cor2);  /* Cor da linha */
+  margin: 10px auto;  /* Espaçamento entre o título e o subtítulo */
+}
+
+header > h3 {
+  font-family: var(--fonte-especial);
+  font-size: 1.2em;
+  color: var(--cor2);
+  max-width: 600px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.534);
+}
+
+span#burguer {
+  background-color: var(--cor1);
+  color: var(--cor2);
+  display: block;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+span#burguer:hover {
+  background-color: var(--cor1);
+  color: var(--cor2);
+}
+
+menu {
+  display: none;
+}
+
+menu > nav > ul {
+  list-style-type: none;
+}
+
+menu > nav > ul > li > a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--cor1);
+  color: var(--cor2);
+  border: 2px solid var(--cor1);
+}
+
+menu > nav > ul > li > a:hover {
+  background-color: var(--cor2);
+  color: var(--cor1);
+  transition-duration: 0.5s;
+}
+
+main {
+  min-width: 100px;
+  max-width: 1000px;
+  margin: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: var(--cor5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+main h2 {
+  font-family: var(--fonte-especial);
+  color: var(--cor1);
+  font-weight: normal;
+  font-size: 1.8em;
+  text-indent: 8px;
+}
+
+main p {
+  margin: 15px 0px;
+  text-align: justify;
+  text-indent: 30px;
+  font-size: 1em;
+  line-height: 2em;
+}
+
+main strong {
+  color: var(--cor0);
+  font-weight: bold;
+}
+
+main a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--cor0);
+  padding: 2px 6px;
+}
+
+main a:hover {
+  text-decoration: underline;
+  color: var(--cor1);
+}
+
+div.video {
+  background-color: var(--cor0);
+  margin: 0px -20px 30px -20px;
+  padding: 20px;
+  padding-bottom: 58%;
+  position: relative;
+}
+
+div.video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+
+aside.social_media {
+  padding: 10px;
+  border-radius: 10px;
+  margin: auto;
+  text-align: center; /* Centraliza o conteúdo do aside */
+}
+
+
+aside.social_media > ul {
+  list-style-type: none; /* Remove os marcadores da lista */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Flexbox para alinhamento */
+  justify-content: center; /* Centraliza os ícones horizontalmente */
+  flex-wrap: wrap; /* Permite a quebra de linha, se necessário */
+}
+
+.no-markers {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.centered {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.centered li {
+  display: inline-block;
+  margin: 10px; /* Espaçamento entre os ícones */
+}
+
+footer {
+  background-color: var(--cor1);
+  color: var(--cor2);
+  text-align: center;
+  font-size: 0.8em;
+  padding: 10px;
+}
+
+footer a {
+  font-family: var(--fonte-padrao);
+  font-size: 0.9em;
+  color: var(--cor2);
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--cor3);
+}

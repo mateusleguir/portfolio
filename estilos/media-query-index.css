@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/* Versão para todas as demais midias */
+
+/* Typical Device Breakpoints
+-----------------------------
+
+Pequenas Telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
+Grandes telas: acima de 1200px
+
+*/
+
+@media screen and (min-width: 768px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    /* O body é configurado como um contêiner flex e está utilizando min-height: 100vh para garantir que o conteúdo cubra toda a altura da janela. O flex-direction: column garante que os elementos filhos (como .wrapper) sejam dispostos em uma coluna. */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .decorative-line {
+    width: 300px;  /* Largura da linha decorativa */
+    height: 2px;  /* Altura da linha */
+    background-color: var(--cor2);  /* Cor da linha */
+    margin: 10px auto;  /* Espaçamento entre o título e o subtítulo */
+  }
+  
+
+  .wrapper {
+    /* O wrapper é um contêiner flex que também utiliza flex-direction: column, garantindo que o conteúdo principal (main) e o footer sejam organizados verticalmente. O flex: 1 garante que o conteúdo principal expanda para ocupar o espaço disponível. */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  span#burguer {
+    display: none;
+  }
+
+  menu {
+    display: block;
+  }
+
+  menu > nav > ul {
+    padding-left: 15px;
+  }
+
+  menu > nav > ul > li {
+    display: inline-block;
+  }
+
+  nav {
+    background-color: var(--cor0);
+  }
+
+  nav > ul > li > a {
+    border-radius: 5px;
+  }
+
+  main {
+    /* Definindo flex: 1 em main, ele ocupará todo o espaço disponível entre o header e o footer, empurrando o footer para o final da página. */
+    flex: 1;
+    width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    background-color: var(--cor0);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 10px;
+    /* A propriedade margin-top: auto no footer empurra o footer para o final do contêiner flex, garantindo que ele fique no fundo da página, mesmo se o conteúdo for pequeno. */
+    margin-top: auto;
+  }
+
+  footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    color: var(--cor3);
+  }
+}
