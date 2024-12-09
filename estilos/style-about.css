@@ -30,7 +30,7 @@
   --cor3: #BDBDBD;
   --cor4: #0066cc;
   --cor5: #56AA79;
-  /* --cor5: #52A894; */
+  --cor6: #42855e98;
 
   --fonte-padrao: "Inter";
   --fonte-destaque: "Architects Daughter", cursive;
@@ -153,7 +153,7 @@ main.content {
 }
 
 aside.education {
-  /* background-color: var(--cor4); */
+  background-color: var(--cor6);
   padding: 10px;
   border-radius: 10px;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
@@ -161,8 +161,7 @@ aside.education {
 }
 
 aside.education > h2 {
-  background-color: var(--cor3);
-  /* color: white; */
+  background-color: var(--cor1);
   padding: 5px;
   margin: -10px -10px 0px -10px;
   border-radius: 10px 10px 0px 0px;
