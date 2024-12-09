@@ -52,7 +52,7 @@ Grandes telas: acima de 1200px
   }
 
   menu {
-    display: block;
+    display: inline-block;
   }
 
   menu > nav > ul {
