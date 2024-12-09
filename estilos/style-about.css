@@ -32,7 +32,8 @@
   --cor5: #56AA79;
   --cor6: #42855e98;
 
-  --fonte-padrao: "Inter";
+
+  --fonte-padrao: "Inter", cursive;
   --fonte-destaque: "Architects Daughter", cursive;
   --fonte-especial: "Outfit", cursive;
 }
@@ -162,9 +163,9 @@ main a:hover {
   color: var(--cor1);
 }
 
-main.content {
-  min-height: calc(100vh - 10px);
-}
+/* main.content {
+  min-height: calc(100vh - 20px);
+} */
 
 aside.education {
   background-color: var(--cor6);

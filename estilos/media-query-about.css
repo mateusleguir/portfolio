@@ -13,6 +13,23 @@ Grandes telas: acima de 1200px
 
 */
 
+
+:root {
+  --cor1: #000000;
+  --cor2: #ECF1F8;
+  --cor3: #BDBDBD;
+  --cor4: #0066cc;
+  --cor5: #56AA79;
+  --cor6: #42855e98;
+
+
+
+  --fonte-padrao: "Inter", cursive;
+  --fonte-destaque: "Architects Daughter", cursive;
+  --fonte-especial: "Outfit", cursive;
+}
+
+
 @media screen and (min-width: 768px) {
   * {
     margin: 0px;
@@ -81,8 +98,8 @@ Grandes telas: acima de 1200px
   }
 
   footer {
-    background-color: var(--cor0);
-    color: white;
+    background-color: var(--cor1);
+    color: var(--cor2);
     text-align: center;
     font-size: 0.8em;
     padding: 10px;
@@ -91,7 +108,7 @@ Grandes telas: acima de 1200px
   }
 
   footer a {
-    color: white;
+    color: var(--cor2);
     font-weight: bolder;
     text-decoration: none;
   }
