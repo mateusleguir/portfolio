@@ -60,9 +60,22 @@ header > h1 {
   margin-bottom: 10px;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.534);
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+
 }
+
+header > h3 {
+  font-family: var(--fonte-especial);
+  font-size: 1.2em;
+  color: var(--cor2);
+  max-width: 600px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.534);
+}
+
 
 span#burguer {
   background-color: var(--cor1);

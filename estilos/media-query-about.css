@@ -33,7 +33,7 @@ Grandes telas: acima de 1200px
   }
 
   .decorative-line {
-    width: 300px;  /* Largura da linha decorativa */
+    width: 150px;  /* Largura da linha decorativa */
     height: 2px;  /* Altura da linha */
     background-color: var(--cor2);  /* Cor da linha */
     margin: 10px auto;  /* Espaçamento entre o título e o subtítulo */
