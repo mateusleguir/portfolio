@@ -150,6 +150,11 @@ main p {
   line-height: 2em;
 }
 
+main ul, li {
+  font-family: var(--fonte-padrao);
+  font-size: 0.8em;
+}
+
 main strong {
   color: var(--cor0);
   font-weight: bold;
@@ -223,6 +228,12 @@ footer {
   text-align: center;
   font-size: 0.8em;
   padding: 10px;
+}
+
+footer p {
+  font-family: var(--fonte-destaque);
+  font-size: 0.9em;
+
 }
 
 footer a {
