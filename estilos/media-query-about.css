@@ -62,6 +62,7 @@ Grandes telas: acima de 1200px
     display: flex;
     flex-direction: column;
     flex: 1;
+    
   }
 
   span#burguer {
@@ -69,11 +70,17 @@ Grandes telas: acima de 1200px
   }
 
   menu {
-    display: block;
+    display: flex;
+    align-items: center;  /* Alinha verticalmente os itens */
+    justify-content: center;  /* Centraliza os itens no eixo horizontal */
+    padding: 10px 0;
   }
 
   menu > nav > ul {
-    padding-left: 15px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
   menu > nav > ul > li {
@@ -81,10 +88,11 @@ Grandes telas: acima de 1200px
   }
 
   nav {
-    background-color: var(--cor0);
+    background-color: var(--cor1);
   }
 
   nav > ul > li > a {
+    font-family: var(--fonte-padrao);
     border-radius: 5px;
   }
 
@@ -96,6 +104,23 @@ Grandes telas: acima de 1200px
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
+  main p {
+    font-family: var(--fonte-padrao);
+    font-size: 0.8em;
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 8px;
+    font-size: 1em;
+    line-height: 2em;
+  }
+  
+  main li {
+    font-family: var(--fonte-padrao);
+    font-size: 0.8em;
+  }
+
+
 
   footer {
     background-color: var(--cor1);

@@ -59,9 +59,15 @@ header > h1 {
   font-size: 3em;
   font-weight: normal;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.534);
   text-align: center;
 
+}
+
+.decorative-line {
+  width: 30%;  /* Largura da linha decorativa */
+  height: 2px;  /* Altura da linha */
+  background-color: var(--cor2);  /* Cor da linha */
+  margin: 10px auto;  /* Espaçamento entre o título e o subtítulo */
 }
 
 header > h3 {
@@ -137,13 +143,19 @@ main h2 {
   text-indent: 8px;
 }
 
-main p, li {
+main p {
   font-family: var(--fonte-padrao);
+  font-size: 0.8em;
   margin: 15px 0px;
   text-align: justify;
   text-indent: 8px;
   font-size: 1em;
   line-height: 2em;
+}
+
+main li {
+  font-family: var(--fonte-padrao);
+  font-size: 0.8em;
 }
 
 main strong {
@@ -162,10 +174,6 @@ main a:hover {
   text-decoration: underline;
   color: var(--cor1);
 }
-
-/* main.content {
-  min-height: calc(100vh - 20px);
-} */
 
 aside.education {
   background-color: var(--cor6);
@@ -196,6 +204,23 @@ aside.education > ul > li#technician {
   list-style-type: "🧑🏽‍💻\00A0";
   list-style-position: inside;
 }
+
+.no-markers {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.centered {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.centered li {
+  display: inline-block;
+  margin: 10px; /* Espaçamento entre os ícones */
+}
+
 
 footer {
   background-color: var(--cor0);
